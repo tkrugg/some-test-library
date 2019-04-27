@@ -3,6 +3,15 @@ node_js:
   - 9
   - 8
 
+env:
+  global:
+    - TMPDIR=/tmp
+
+addons:
+  artifacts:
+    paths:
+      - './diff.html'
 script:
 - yarn 
 - yarn build
+- yarn bundlediff --path . --output "diff.html"

@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import styles from './styles.css'
 
 function A() {
-  return 'A';
+  return 'a';
 }
 
 export default class ExampleComponent extends Component {
