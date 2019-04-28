@@ -1,7 +1,6 @@
 language: node_js
 node_js:
   - 9
-  - 8
 
 env:
   global:
@@ -14,4 +13,4 @@ addons:
 script:
 - yarn 
 - yarn build
-- yarn bundlediff --path . --output "diff.html"
+- node bundlediff --path . --output "diff.html"
