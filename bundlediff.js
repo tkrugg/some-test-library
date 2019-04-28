@@ -16,7 +16,7 @@ const sh = require("shelljs");
 const ejs = require("ejs");
 const { Diff2Html } = require("diff2html");
 const tmp = require("tmp");
-const tmpobj = tmp.dirSync({ mode: "0750", prefix: "bundlediff--" });
+const tmpobj = tmp.dirSync({ mode: 777, prefix: "bundlediff--" });
 
 function clone(repositoryUrl, branchName) {
   const location = path.join(tmpobj.name, "source");
