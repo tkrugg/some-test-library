@@ -1,4 +1,4 @@
 { 
-	"repositoryUrl": "git@github.com:tkrugg/some-test-library.git",
+	"repositoryUrl": "https://github.com/tkrugg/some-test-library.git",
 	"include": ["dist/"] 
 }
