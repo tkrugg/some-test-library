@@ -60,6 +60,7 @@
   ],
   "dependencies": {
     "bundlediff": "^0.0.4",
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.11",
+    "surge": "^0.20.4"
   }
 }

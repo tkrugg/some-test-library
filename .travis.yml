@@ -14,3 +14,8 @@ script:
 - yarn 
 - yarn build
 - node bundlediff --path . --output "diff.html"
+
+deploy:
+  provider: surge
+  project: .
+  project: my-example-9876308.surge.sh
