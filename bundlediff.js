@@ -16,14 +16,10 @@ const sh = require("shelljs");
 const ejs = require("ejs");
 const { Diff2Html } = require("diff2html");
 const tmp = require("tmp");
-//const tmpobj = tmp.dirSync({ mode: 777, prefix: "bundlediff--" });
-sh.exec('mkdir out')
-sh.exec('ls -l')
-const tmpobj = {
-  name: './out'
-}
+const tmpobj = tmp.dirSync({ mode: 777, prefix: "bundlediff--" });
+sh.exec(`mkdir -p ${tmpobj.name}`);
+sh.exec(`chmod -R 777 ${tmpobj.name}`)
 
-sh.exec('chmod -R 777 out')
 
 function clone(repositoryUrl, branchName) {
   const location = path.join(tmpobj.name, "source");
