@@ -83,6 +83,7 @@ function run(options) {
   buildMaster(masterPath);
   buildHead(headPath);
 
+  sh.exec('ls -l out/source/')
   const diff = performDiff(
     path.join(masterPath, "dist/"),
     path.join(headPath, "dist/")
