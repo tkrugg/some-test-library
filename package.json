@@ -59,7 +59,7 @@
     "dist"
   ],
   "dependencies": {
-    "bundlediff": "^0.0.4",
+    "bundlediff": "^0.1.0",
     "lodash": "^4.17.11",
     "surge": "^0.20.4"
   }
